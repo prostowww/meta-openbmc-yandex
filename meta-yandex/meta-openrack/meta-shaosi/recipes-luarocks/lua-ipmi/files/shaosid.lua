@@ -176,7 +176,7 @@ L_ipmi_cmds = {
             db_resty:request(self.n, 'type', response:byte(8+3))
             db_resty:request(self.n, 'rackid', response:sub(8+5, 8+14))
             db_resty:request(self.n, 'slotid', response:byte(8+15))
-        end, 0x38, 0x30, 0x00 },
+        end, 0x38, 0x30, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 },
     },
 
     sdr_read = function(self, name, value)
