@@ -111,6 +111,7 @@ local L_ipmi_sdrs = {
   {'SATA[0-9]+_STAT', 2, 60.0},
   {'P0N[01]_STAT', 2, 60.0},
   {'SATA[0-9]+_P1N[01]_STAT', 2, 60.0},
+  {'BP[12]_HDD_TEMP[12]', 2, 60.0},
 }
 
 local rounds = 0
