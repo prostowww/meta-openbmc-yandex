@@ -207,15 +207,20 @@
 						compatible = "ti,ina219";
 						reg = <0x40>;
 					};
-					tmp@48 {
-						label = "TEMP_BPB";
-						compatible = "national,lm75";
-						reg = <0x48>;
-					};
 					tmp@49 {
 						label = "TEMP_CB";
 						compatible = "national,lm75";
 						reg = <0x49>;
+					};
+					tmp@48 {
+						label = "TEMP_COLD_ISLE";
+						compatible = "national,lm75";
+						reg = <0x48>;
+					};
+					tmp@4c {
+						label = "TEMP_HOT_ISLE";
+						compatible = "national,lm75";
+						reg = <0x4c>;
 					};
 			fru {
 				compatible = "atmel,24c256";
